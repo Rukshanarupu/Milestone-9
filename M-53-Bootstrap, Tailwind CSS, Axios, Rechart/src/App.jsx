@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import Navber from './Components/Navber/Navber'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
   return (
     <div className="App">
-      <Navber></Navber>
+      <Navbar></Navbar>
       <h1 className='text-2xl'>Hellow from tailwind</h1>
     </div>
   )

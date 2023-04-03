@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Navber = () => {
+const Navbar = () => {
     const [open, setOpen]=useState(false)
 
   const routes = [
@@ -34,4 +34,4 @@ const Navber = () => {
   );
 };
 
-export default Navber;
+export default Navbar;
