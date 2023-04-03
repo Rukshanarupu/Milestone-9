@@ -8,14 +8,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
-import React from 'react';
-
-const main = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-};
-
-export default main;

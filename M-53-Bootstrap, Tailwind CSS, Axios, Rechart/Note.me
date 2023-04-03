@@ -1,22 +1,14 @@
-/// Use of fontawosone :: https://fontawesome.com/v5/docs/web/use-with/react#using-icons
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-or 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-const main = () => {
+// Start using heroicons!
+install import---------- npm install @heroicons/react
+import { BeakerIcon } from '@heroicons/react/solid'
+
+function MyComponent() {
   return (
     <div>
-      <FontAwesomeIcon icon={faCoffee} />
+      <BeakerIcon className="h-5 w-5 text-blue-500"/>
+      <p>Hello from heroicons!</p>
     </div>
-  );
-};
+  )
+}
 
 
-/// use of react icon
-import { FaBeer } from 'react-icons/fa';
-const main = () => {
-  return (
-    <div>
-      <FaBeer />
-    </div>
-  );
-};
