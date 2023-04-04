@@ -26,7 +26,8 @@ const Navbar = () => {
                     routes.map(route=>
                         <li>
                             <a href={route.path}>{route.name}</a>
-                        </li>)          
+                        </li>
+                    )          
                 }
             </ul>
         </div>
