@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Header from '../Header/Header';
 
 const Home = () => {
@@ -7,13 +7,7 @@ const Home = () => {
         <div>
             
             <Header></Header>
-            {/* <nav className='mb-4'>
-                <Link to="/">Home</Link>
-                <Link to="/friends">Friends</Link>
-                <Link to="/posts">Posts</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-            </nav> */}
+            {/* <div>{navigation.state === 'loading' && 'Loading...' }</div> */}
             <Outlet></Outlet>
         </div>
     );

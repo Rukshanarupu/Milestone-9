@@ -1,0 +1,8 @@
+nav a{
+    padding: 5px 10px 5px 10px;
+    background-color: beige;
+    border-radius: 10px;
+    margin: 0px 4px;
+}
+
+/* className='py-1 px-3 bg-slate-200 rounded mx-1' */

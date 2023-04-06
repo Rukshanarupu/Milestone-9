@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-// import ErrorPage from "./error-page";
+import ErrorElement from './components/ErrorElement/ErrorElement';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Friends from './Components/Friends/Friends';
@@ -17,6 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home> ,
+    errorElement: <ErrorElement></ErrorElement>,
     children:[
       {
         path: '/',

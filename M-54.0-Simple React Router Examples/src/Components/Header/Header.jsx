@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
+import './Header.css';
 
 const Header = () => {
     const [open, setOpen]=useState(false)
@@ -15,14 +17,15 @@ const Header = () => {
             </div>
         </div>  
         <nav className={`menu px-1 md:menu-horizontal absolute md:static duration-500 ${open? 'top-20':"-top-48"}`}>
-            <Link to="/" className='py-1 px-3 bg-slate-200 rounded mx-1'>Home</Link>
-            <Link to="/friends" className='py-1 px-3 bg-slate-200 rounded mx-1'>Friends</Link>
-            <Link to="/posts" className='py-1 px-3 bg-slate-200 rounded mx-1'>Posts</Link>
-            <Link to="/about" className='py-1 px-3 bg-slate-200 rounded mx-1'>About</Link>
-            <Link to="/contact" className='py-1 px-3 bg-slate-200 rounded mx-1'>Contact</Link>
+            <ActiveLink to="/">Home</ActiveLink>
+            <ActiveLink to="/friends">Friends</ActiveLink>
+            <ActiveLink to="/posts">Posts</ActiveLink>
+            <ActiveLink to="/about">About</ActiveLink>
+            <ActiveLink to="/contact">Contact</ActiveLink>
         </nav>
     </div>
   );
 };
+
 
 export default Header;
