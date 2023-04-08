@@ -8,6 +8,7 @@ import Login from './Components/Login';
 import App from './App';
 import Cart from './Components/Cart';
 import Shop from './Components/Shop';
+import ErrorElement from './Components/ErrorElement';
 
 
 const router = createBrowserRouter([
@@ -42,10 +43,10 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login></Login>
       },
-      {
-        path: 'loader',
-        element: <LoadingSpinner />,
-      },
+      // {
+      //   path: 'loader',
+      //   element: <LoadingSpinner />,
+      // },
     ]
   },
 ]);

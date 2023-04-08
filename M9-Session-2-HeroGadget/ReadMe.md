@@ -1,3 +1,9 @@
+//////// install lottie react
+npm i lottie-react
+
+//////// install Dom react
+npm install react-router-dom
+
 ///........Use of toaster........./////
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -57,5 +63,9 @@ Icon -> [Hero Icon](https://heroicons.com/)
 Emoji -> [EmojiPedia](https://emojipedia.org/)
 
 Image -> [Freepik](https://www.freepik.com/)
+
+
+
+
 
 
