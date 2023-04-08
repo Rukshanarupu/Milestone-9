@@ -27,20 +27,20 @@ const Header = () => {
                             Home
                             </NavLink>
                         </li>
-                        <li>
+                        <li className='text-black'>
                             <NavLink to="/books" 
                             className={({ isActive }) => (isActive ? 'active' : 'default')} 
                             >Books
                             </NavLink>
                         </li>
-                        <li>
+                        <li className='text-black'>
                             <NavLink 
                             to="/about"
                             className={({ isActive }) => (isActive ? 'active' : 'default')} 
                             >About Us
                             </NavLink>
                         </li>
-                        <li>
+                        <li className='text-black'>
                             <NavLink to="/login"
                             className={({ isActive }) => (isActive ? 'active' : 'default')}
                             >Login

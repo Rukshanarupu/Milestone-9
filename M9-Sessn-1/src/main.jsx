@@ -7,13 +7,16 @@ import Books from './Components/Books';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Login from './Components/Login';
 import App from './App';
+import BookDetails from './Components/BookDetails';
+import LoadingSpinner from './Components/LoadingSpinner';
+import ErrorElement from './Components/ErrorElement';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    // errorElement: <ErrorElement></ErrorElement>,
+    errorElement: <ErrorElement></ErrorElement>,
     children:[
       {
         path: '/',
@@ -21,7 +24,14 @@ const router = createBrowserRouter([
       },
       {
         path: '/books',
-        element: <Books></Books>
+        element: <Books></Books>,
+        loader: () => fetch('https://api.itbook.store/1.0/new'),
+      },
+      {
+        path: 'book/:id',
+        element: <BookDetails></BookDetails>,
+        loader: ({ params }) =>
+          fetch(`https://api.itbook.store/1.0/books/${params.id}`),
       },
       {
         path: '/about',
@@ -30,14 +40,16 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
-      }
+      },
+      {
+        path: 'loader',
+        element: <LoadingSpinner />,
+      },
     ]
   },
 ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} ></RouterProvider>
-  </React.StrictMode>,
+  <RouterProvider router={router} />
 )
