@@ -1,133 +1,100 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className='my-container'>
-      <div className='max-w-xl sm:mx-auto lg:max-w-2xl'>
-        <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
-          <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto'>
-            <span className='relative inline-block'>
+    <section className='bg-gray-100 text-gray-900'>
+      <div className='container flex flex-col items-center p-4 mx-auto md:p-8'>
+        <h1 className='text-3xl font-bold leading-none text-center sm:text-4xl'>
+          Help Center
+        </h1>
+        <div className='relative mt-6 mb-12'>
+          <span className='absolute inset-y-0 flex items-center pl-2 mx-auto'>
+            <button
+              type='submit'
+              title='Search'
+              className='p-1 focus:outline-none focus:ring'
+            >
               <svg
-                viewBox='0 0 52 24'
                 fill='currentColor'
-                className='absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block'
+                viewBox='0 0 512 512'
+                className='w-4 h-4 text-gray-900'
               >
-                <defs>
-                  <pattern
-                    id='70326c9b-4a0f-429b-9c76-792941e326d5'
-                    x='0'
-                    y='0'
-                    width='.135'
-                    height='.30'
-                  >
-                    <circle cx='1' cy='1' r='.7' />
-                  </pattern>
-                </defs>
-                <rect
-                  fill='url(#70326c9b-4a0f-429b-9c76-792941e326d5)'
-                  width='52'
-                  height='24'
-                />
+                <path d='M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195ZM48,192c0-79.4,64.6-144,144-144s144,64.6,144,144S271.4,336,192,336,48,271.4,48,192ZM456.971,456.284a24.028,24.028,0,0,1-33.942,0l-76.572-76.572-23.894-57.835L380.4,345.771l76.573,76.572A24.028,24.028,0,0,1,456.971,456.284Z'></path>
               </svg>
-              <span className='relative'>A</span>
-            </span>{' '}
-            reader lives a thousand lives before he dies
-          </h2>
-          <p className='text-base text-gray-700 md:text-lg'>
-            Books are a uniquely portable magic. Books serve to show a man that
-            those original thoughts of his aren’t very new after all. The man
-            who does not read good books is no better than the man who can’t.
-          </p>
+            </button>
+          </span>
+          <input
+            type='search'
+            name='Search'
+            placeholder='Search...'
+            className='w-full py-3 pl-12 text-sm rounded-full sm:w-96 focus:outline-none bg-gray-200 text-gray-800 focus:bg-gray-300'
+          />
         </div>
-      </div>
-      <div className='max-w-screen-xl sm:mx-auto'>
-        <div className='grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2'>
-          <div className='space-y-8'>
-            <div>
-              <p className='mb-4 text-xl font-medium'>
-                Books are a uniquely portable magic.
-              </p>
-              <p className='text-gray-700'>
-                Space, the final frontier. These are the voyages of the Starship
-                Enterprise. Its five-year mission: to explore strange new
-                worlds.
-                <br />
-                <br />
-                Many say exploration is part of our destiny, but it’s actually
-                our duty to future generations.
-              </p>
-            </div>
-            <div>
-              <p className='mb-4 text-xl font-medium'>
-                The first mate and his Skipper too will do?
-              </p>
-              <p className='text-gray-700'>
-                Well, the way they make shows is, they make one show. That
-                show's called a pilot.
-                <br />
-                <br />
-                Then they show that show to the people who make shows, and on
-                the strength of that one show they decide if they're going to
-                make more shows. Some pilots get picked and become television
-                programs.Some don't, become nothing. She starred in one of the
-                ones that became nothing.
-              </p>
-            </div>
-            <div>
-              <p className='mb-4 text-xl font-medium'>
-                Is the Space Pope reptilian!?
-              </p>
-              <p className='text-gray-700'>
-                A flower in my garden, a mystery in my panties. Heart attack
-                never stopped old Big Bear. I didn't even know we were calling
-                him Big Bear.
-              </p>
-            </div>
+        <div className='flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:divide-x sm:px-8 lg:px-12 xl:px-32 divide-gray-700'>
+          <div className='flex flex-col w-full divide-y divide-gray-700'>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Billing
+            </Link>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Support
+            </Link>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Account
+            </Link>
           </div>
-          <div className='space-y-8'>
-            <div>
-              <p className='mb-4 text-xl font-medium'>
-                How much money you got on you?
-              </p>
-              <p className='text-gray-700'>
-                The first mate and his Skipper too will do their very best to
-                make the others comfortable in their tropic island nest.
-                <br />
-                <br />
-                Michael Knight a young loner on a crusade to champion the cause
-                of the innocent. The helpless. The powerless in a world of
-                criminals who operate above the law. Here he comes Here comes
-                Speed Racer. He's a demon on wheels.
-              </p>
-            </div>
-            <div>
-              <p className='mb-4 text-xl font-medium'>
-                Galaxies Orion's sword globular star cluster?
-              </p>
-              <p className='text-gray-700'>
-                A business big enough that it could be listed on the NASDAQ goes
-                belly up. Disappears!
-                <br />
-                <br />
-                It ceases to exist without me. No, you clearly don't know who
-                you're talking to, so let me clue you in.
-              </p>
-            </div>
-            <div>
-              <p className='mb-4 text-xl font-medium'>
-                When has justice ever been as simple as a rule book?
-              </p>
-              <p className='text-gray-700'>
-                This is not about revenge. This is about justice. A lot of
-                things can change in twelve years, Admiral. Well, that's
-                certainly good to know. About four years. I got tired of hearing
-                how young I looked.
-              </p>
-            </div>
+          <div className='flex flex-col w-full divide-y divide-gray-700'>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Features
+            </Link>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Contact us
+            </Link>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              My orders
+            </Link>
+          </div>
+          <div className='hidden w-full divide-y sm:flex-col sm:flex divide-gray-700'>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Enterprise
+            </Link>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Privacy
+            </Link>
+            <Link
+              to='/support'
+              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
+            >
+              Developers
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
